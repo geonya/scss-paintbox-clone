@@ -127,8 +127,19 @@ header {
 				margin-bottom: 50px;
 			}
 			a {
-				border: 1px solid black;
-				padding: 20px;
+				width: 40%;
+				background-color: white;
+				padding: 20px 0px;
+				color: black;
+				text-align: center;
+				text-decoration: none;
+				@extend %miniTitle;
+				font-size: 10px;
+				transition: color 0.3s linear, background 0.3s linear;
+				&:hover {
+					background-color: black;
+					color: white;
+				}
 			}
 		}
 	}
@@ -169,6 +180,21 @@ header {
 			h4 {
 				font-size: 32px;
 				margin-bottom: 40px;
+			}
+			a {
+				width: 20%;
+				background-color: white;
+				padding: 20px 0px;
+				color: black;
+				text-align: center;
+				text-decoration: none;
+				@extend %miniTitle;
+				font-size: 10px;
+				transition: color 0.3s linear, background 0.3s linear;
+				&:hover {
+					background-color: black;
+					color: white;
+				}
 			}
 		}
 	}
